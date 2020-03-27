@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>shop</title>
+<link href="stylesheet_alt.css" rel="stylesheet" type="text/css">
+<link href="script.js"	rel="javascript" type="text/javascript">
+	
+	
+<link href="https://fonts.googleapis.com/css?family=Muli|Walter+Turncoat&display=swap" rel="stylesheet">	
+	<style>
+		
+		
+		body{
+			margin: 0;
+		}
+		
+		h1{
+			font-size: 36pt;
+		}	
+		
+		p,h2, h3, h4{
+			font-family: 'Muli',Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		}
+		
+		alt{
+			font-family: 'Muli',Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		}
+		
+		
+		.gallery{
+			margin: auto;
+			width: 80%;
+			margin-top: 30px;
+		}
+		
+		.column {
+			float: left;
+			width: 29.33%;
+			padding: 2%;
+		}
+		
+		.column img {
+			opacity: 0.8; 
+			cursor: pointer; 
+		}
+		
+		.column img:hover {
+			opacity: 1;
+		}
+		
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		.container {
+			position: relative;
+			display: none;
+			width: 60%;
+			margin: auto;
+		}
+		
+		#imgtext {
+			position: absolute;
+			bottom: 15px;
+			left: 15px;
+			color: black;
+			font-size: 20px;
+			font-family: 'Muli',Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		}
+		
+		.closebtn {
+			position: absolute;
+			top: 10px;
+			right: 15px;
+			color: white;
+			font-size: 35px;
+			cursor: pointer;
+		}
+		
+@media only screen and (max-width: 500px){
+	
+	.gallery{
+			margin: auto;
+			width: 100%;
+			margin: 40px 0;
+		}
+	
+.column {
+  float: left;
+  width: 32.33%;
+	padding: .5%;
+}
+	
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+	
+.column img:hover {
+  opacity: 1;
+}
+	
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	
+.container {
+  position: relative;
+  display: none;
+	width: 100%;
+	margin: auto;
+}
+	
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: black;
+  font-size: 20px;
+	font-family: 'Muli',Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+	
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+	
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 10px;
+  font-family: 'Muli',Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+			
+		}
+
+	</style>
+	
+	
+</head>
+
+<body>
+	
+		<div class="header">
+		
+		<div class="logo">
+			<a href="index.html"><img src="images/logo_big.png" alt="MacBeth Logo" style="height:100%; margin: auto;"></a>
+		</div>
+		
+		<div class="nav">
+			<div class="nav_one">
+				<a href="index.html"><img src="images/button_1.png" style="width: 100%;"></a>
+			</div>
+			<div class="nav_two">
+				<a href="tickets.html"><img src="images/button_2.png" style="width: 100%;"></a>
+			</div>
+			<div class="nav_three">
+				<a href="shop.html"><img src="images/button_3.png" style="width: 100%;"></a>
+			</div>
+		</div>
+		
+		<div class="buy">
+			<a href="tickets.html"><img src="images/buy.png" alt="Buy Button" style="height: 100%"></a>
+		</div>
+		
+	</div>
+	
+<div class="gallery">	
+<div class="row">
+  <div class="column">
+    <img src="images/shop_items/canvasbag_2.jpg" alt="MacBeth Tote<br>$12.00" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/shop_items/canvasbag_3.jpg" alt="MacBeth Tote<br>$12.00" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/shop_items/Pins.jpg" alt="MacBeth Pins<br>$5.00" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+	
+	
+<div class="row">
+  <div class="column">
+    <img src="images/shop_items/Free-T-shirt-Mockup-Front.jpg" alt="MacBeth T-shirt<br>$20.00" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/shop_items/T-shirt_2.jpg" alt="MacBeth T-shirt<br>$20.00" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/shop_items/phone-case.jpg" alt="MacBeth Phone Case<br> $10.00" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+	
+<div class="row">
+  <div class="column">
+    <img src="images/shop_items/Mug_1.jpg" alt="MacBeth Coffee Cup<br>$8.00" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/shop_items/Mug_2.jpg" alt="MacBeth Coffee Cup<br>$8.00" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/shop_items/Poster.jpg" alt="MacBeth Poster<br>$5.00" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>	
+
+	
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+
+</div>
+	
+	<div class="footer">
+		<div class="sub_nav">
+			<a href="index.html">Home</a><br><br>
+			<a href="tickets.html">Tickets</a><br><br>
+			<a href="shop.html">Shop</a><br><br>
+		</div>
+		
+		<div class="email">
+			<form action="mailto:abotis393@gmail.com" method="post" style="text-align: center;font-family: 'Muli', 'Nanum Myeongjo', Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; font-size: 18px;" enctype="text/plain">
+  			<label for="fname"></label><br><br>
+  			<input type="text" id="fname" name="fname" value="Email Address">
+  			<input type="submit" value="Get Our Newsletter">
+		</form> 
+		</div>
+	</div>	
+	
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+	
+	
+	
+	
+</body>
+	
+</html>
